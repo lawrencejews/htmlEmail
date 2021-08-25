@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Single Column Hybrid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* GMAIL BLUE LINKS */
+        u+#body a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* SAMSUNG MAIL BLUE LINKS */
+        #MessageViewBody a {
+            color: inherit;
+            text-decoration: none;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+        }
+
+        /* Universal styles for links and stuff */
+        a {
+            color: #229efd;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fd6350;
+            text-decoration: none;
+        }
+
+        a.button:hover {
+            background-color: #fd6350 !important;
+        }
+
+        /* Interactive elements */
+        /* Hide inputs */
+        input {
+            display: none;
+        }
+
+        /* Make labels look clickable */
+        label {
+            cursor: pointer;
+        }
+
+        /*Hide slides */
+        .slide {
+            display: none;
+        }
+
+        /* show the checked slides */
+        #slide1:checked~.slide1,
+        #slide2:checked~.slide2,
+        #slide3:checked~.slide3 {
+            display: block;
+        }
+
+        /* Make the label look active */
+        #slide1:checked~.slide-label1,
+        #slide1:checked~.slide-label2,
+        #slide1:checked~.slide-label3 {
+            border: 2px solid rosybrown !important;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0 !important; padding: 0 !important;">
+
+    <!-- Preview text for the inbox -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        This will be displayed underneath the subject line. Use it wisely.
+    </div>
+
+    <!--[if (gte mso 9)|(IE)]>
+		<table cellspacing="0" cellpadding="0" border="0" width="600" align="center" role="presentation"><tr><td>
+		<![endif]-->
+
+    <div
+        style="background-color: white; color: #000000; font-family: sans-serif; font-size: 18px; line-height: 36px; margin: 0 auto; max-width: 600px; padding: 40px 20px 40px 20px;">
+
+        <!-- Triggers for switching content CHECKBOX HACK-->
+        <input type="radio" name="slides" id="slide1" checked>
+        <input type="radio" name="slides" id="slide2">
+        <input type="radio" name="slides" id="slide3">
+
+        <label for="slide1" class="slide-label"
+            style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Slide 1</label>
+        <label for="slide2" class="slide-label"
+            style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Slide 2</label>
+        <label for="slide3" class="slide-label"
+            style="border: 2px solid black; display: inline-block; margin: 10px; padding: 4px 20px;">Slide 3</label>
+
+        <div class="slide slide1" style="background-color: rgb(241, 241, 158); padding: 20px;">
+            <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo
+                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                dolore magnam aliquam quaerat voluptatem.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur?
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                vel illum qui dolorem eum fugiat
+                quo voluptas nulla pariatur?"
+            </p>
+        </div>
+        <div class="slide slide2" style="background-color:rgb(137, 207, 207); padding: 20px;">
+            <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo
+                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                dolore magnam aliquam quaerat voluptatem.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur?
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                vel illum qui dolorem eum fugiat
+                quo voluptas nulla pariatur?"
+            </p>
+        </div>
+        <div class="slide slide3" style="background-color: rgb(172, 172, 133); padding: 20px;">
+            <p>
+                "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo
+                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia voluptas sit aspernatur aut odit aut
+                fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                dolore magnam aliquam quaerat voluptatem.
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur?
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                vel illum qui dolorem eum fugiat
+                quo voluptas nulla pariatur?"
+            </p>
+        </div>
+
+        <!-- Content to be switched -->
+        <div class="slide slide1" style="background-color: #c7b6b6; padding: 20px;">
+            <h2 style="margin: 0 0 20px 0;">This is slide 1</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="slide slide2" style="background-color: #f7bfbf; padding: 20px;">
+            <h2 style="margin: 0 0 20px 0;">This is slide 2</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="slide slide3" style="background-color: #a59494; padding: 20px;">
+            <h2 style="margin: 0 0 20px 0;">This is slide 3</h2>
+            <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+
+
+    </div>
+    <!--[if (gte mso 9)|(IE)]>
+		</td></tr></table>
+		<![endif]-->
+
+</body>
+
+</html>
